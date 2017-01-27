@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- これはInternetExplorerのブラウザではバージョンによって崩れることがあるので、互換表示をさせないために設定するmetaタグです。 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- これはレスポンシブWebデザインを使うために必要なmetaタグです。 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>YouTube Stream Multi Script</title>
+	<!-- BootstrapのCSS読み込み -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	
+	<div id="YouTubeID" style="display:none;">P8GCjrDWWUM</div>
+	<div id="Duration" style="display:none;">11.82</div>
+	<div id="FineTuning" style="display:none;">0</div>
+	<div id="SubtitlePosition" style="display:none;"></div>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="video-area col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	            <!--<iframe id="player" src="https://www.youtube.com/embed/P8GCjrDWWUM" frameborder="0" allowfullscreen="1" title="YouTube video player"></iframe>      -->    
+	            <iframe id="player" frameborder="0" allowfullscreen="1" title="YouTube video player" width="922" height="518.625" src="https://www.youtube.com/embed/P8GCjrDWWUM?html5=1&autohide=1&iv_load_policy=3&modestbranding=1&controls=2&showinfo=0&rel=0&wmode=transparent&playsinline=1&enablejsapi=1" style="position: relative; top: 187.188px; left: 0px;"></iframe>
+        	</div>
+        	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 subtitle-area">
+	<table class="table table-bordered">
+		<tr style="position: absolute; height:40%; width:90%; overflow:scroll;">
+			<td id="english-script">
+			</td>
+		</tr>
+		<tr style="position: absolute; top:45%; bottom:5%; width:90%; overflow:scroll;">
+			<td id="japanese-script">
+			</td>
+		</tr>
+	</table>
+        	</div>
+		</div>
+	</div>
+	
+
+	<!-- BootstrapのJavaScriptよりも、jQueryを先に読み込む -->
+	<!-- jQuery読み込み -->
+	<script type="text/javascript"  src="js/lib/jquery-2.2.3.min.js"></script>
+	<!-- BootstrapのJS読み込み -->
+	<script src="js/lib/bootstrap.min.js"></script>
+	<script src="js/lib/jquery.mousewheel.min.js"></script>
+	
+	<script tyle="text/javascript" src="js/test.js"></script>
+	<script tyle="text/javascript" src="js/resizeEvent.js"></script>
+	<script tyle="text/javascript" src="js/loadEvent.js"></script>
+
+	<script src="https://www.youtube.com/iframe_api"></script>
+</body>
+
+
+</html>

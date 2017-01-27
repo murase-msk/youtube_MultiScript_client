@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Sample</title>
+	<!-- BootstrapのCSS読み込み -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<!-- jQuery読み込み -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- BootstrapのJS読み込み -->
+	<script src="js/lib/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<header style="background-color:white">
+		Header
+		<!-- Navs Tabs  -->
+		<ul class="nav nav-tabs">
+		  <li role="presentation" class="active"><a href="#">Home</a></li>
+		  <li role="presentation"><a href="#">Profile</a></li>
+		  <li role="presentation"><a href="#">Messages</a></li>
+		</ul>
+
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Brand</a> 
+				</div>  
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8"> 
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li> 
+						<li><a href="#">Link</a></li> 
+						<li><a href="#">Link</a></li> 
+					</ul> 
+				</div> 
+			</div> 
+		</nav>
+		end header
+	</header>
+
+<!-- Jumbotron  -->
+<div class="container">
+	<div class="jumbotron">
+		<h1>ジャンボトロン</h1>
+		<p>WEBサイトにおける主要コンテンツを紹介するのに適したスタイル。</p>
+		<p><a class="btn btn-primary btn-lg" href="./jumbotron.html" role="button">もっと詳しく</a></p>
+	</div>
+</div
+<!--   -->
+<!--   -->
+<!-- Dropdowns -->
+<!--   -->
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<!-- Button addons  -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+      <input type="text" class="form-control" placeholder="Search for...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+
+<!-- Thumbnails  -->
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+		<div class="thumbnail">
+			<img src="http://bootstrap3.cyberlab.info/img/sample-256x256.png">
+			<div class="caption">
+				<h3>サムネイル・ラベル</h3>
+				<p>段落。</p>
+				<p>...</p>
+				<p><a href="http://bootstrap3.cyberlab.info/img/sample-256x256.png" class="btn btn-default" role="button" target="_blank">ボタン</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+		<div class="thumbnail">
+			<img src="http://bootstrap3.cyberlab.info/img/sampleB-256x256.png">
+			<div class="caption">
+				<h3>サムネイル・ラベル</h3>
+				<p>段落。</p>
+				<p>...</p>
+				<p><a href="http://bootstrap3.cyberlab.info/img/sampleB-256x256.png" class="btn btn-default" role="button" target="_blank">ボタン</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+		<div class="thumbnail">
+			<img src="http://bootstrap3.cyberlab.info/img/sampleC-256x256.png">
+			<div class="caption">
+				<h3>サムネイル・ラベル</h3>
+				<p>段落。</p>
+				<p>...</p>
+				<p><a href="http://bootstrap3.cyberlab.info/img/sampleC-256x256.png" class="btn btn-default" role="button" target="_blank">ボタン</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+		<div class="thumbnail">
+			<img src="http://bootstrap3.cyberlab.info/img/sampleD-256x256.png">
+			<div class="caption">
+				<h3>サムネイル・ラベル</h3>
+				<p>段落。</p>
+				<p>...</p>
+				<p><a href="http://bootstrap3.cyberlab.info/img/sampleD-256x256.png" class="btn btn-default" role="button" target="_blank">ボタン</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Pagination  -->
+<nav>
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+	<footer style="background-color:gray">Footer</footer>
+</body>
+</html>
+
+
+
